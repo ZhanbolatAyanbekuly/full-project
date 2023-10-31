@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>COOKIES</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <link rel="icon" type="image/x-icon" href="assets/asa.png">
+    <style>
+      .carousel-inner {
+        /* width: 1100px; */
+        height: 550px;
+        margin-top: 100px;
+        border-radius: 50px;  
+      }
+      .icon{
+        max-height: 60px;
+      }
+      .navbar-brand {
+          font-family: cursive;
+          font-size: 24px;
+          color: whitesmoke;
+          font-weight: bold;
+      }
+
+      span {
+          font-size: 24px; 
+          color: black; 
+      }
+
+      del {
+          text-decoration: line-through; 
+          color: red; 
+      }
+
+      .container-fluid{
+        padding-left: 30px;
+      }
+    </style>
+</head>
+<body>
+  <nav class="navbar navbar-dark bg-dark fixed-top">
+    
+    <div class="container-fluid">
+      <img src="assets/icon.png" alt="#####" class="icon">
+      <a class="navbar-brand" >Откройте дверь в мир сладостей.</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar">
+          <i class="fas fa-home" style="color: #ffffff;"></i>
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasDarkNavbar" aria-labelledby="offcanvasDarkNavbarLabel">
+        <div class="offcanvas-header">
+          <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel">Главное меню</h5>
+          <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+          <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Главная</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="ASSIGMENT2.html">Для заказа</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="ASSIGMENT2(part3).html" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Каталог
+              </a>
+              <ul class="dropdown-menu dropdown-menu-dark">
+                <li><a class="dropdown-item" href="ASSIGMENT2(part3).html">Торты</a></li>
+                <li><a class="dropdown-item" href="#hot-section">Выпечки</a></li>
+                <li>
+                  <hr class="dropdown-divider">
+                </li>
+                <li><a class="dropdown-item" href="#icecream-section">Мороженое</a></li>
+              </ul>
+            </li>
+          </ul>
+          <form class="d-flex mt-3" role="search">
+            <input class="form-control me-2" type="search" placeholder="Поиск" aria-label="Поиск">
+            <button class="btn btn-success" type="submit">Поиск</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <div class="container">
+  <div id="carouselExample" class="carousel slide">
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="https://img.washingtonpost.com/wp-apps/imrs.php?src=https://arc-anglerfish-washpost-prod-washpost.s3.amazonaws.com/public/KUQJLGUQXEV4RPN5KYJBNOUVCE.jpg&w=1800" class="d-block w-100" alt="...">
+      </div>
+      <div class="carousel-item">
+        <img src="https://www.foodandwine.com/thmb/HXQZrJNlb-fIOwJfhhQupjvEuBw=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/Chantilly-Cream-Cake-FT-RECIPE0423-b012a9c7b8ed419f83a219f8ef9201e8.jpg" class="d-block w-100" alt="...">
+      </div>
+      <div class="carousel-item">
+        <img src="https://lovingitvegan.com/wp-content/uploads/2015/10/Vanilla-Cake-10.jpg" class="d-block w-100" alt="...">
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon btn btn-outline-dark" aria-hidden="true"></span>
+      <span class="visually-hidden" >Предыдущий</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+      <span class="carousel-control-next-icon btn btn-outline-dark" aria-hidden="true"></span>
+      <span class="visually-hidden">Следующий</span>
+    </button>
+  </div>
+  </div>
+
+  <!-- Product Categories Section -->
+  <div class="container mt-5">
+      <h2>Популярные продукты</h2>
+      <div class="row">
+          <div class="col-lg-4 col-md-6 mb-4">
+              <div class="card">
+                  <img src="https://api.taptatti.kz/storage/picture/product/753/pictures/IMG_2052.JPG" class="card-img-top" alt="Category 1">
+                  <div class="card-body">
+                      <span>3000тг <del>5500тг<del></span>
+                      <p class="card-text">«New York»</p>
+                      <a class="btn_order btn btn-primary" href="ASSIGMENT2.html">Заказать</a>
+                  </div>
+              </div>
+          </div>
+          <div class="col-lg-4 col-md-6 mb-4">
+              <div class="card">
+                  <img src="https://api.taptatti.kz/storage/picture/product/780/pictures/Screenshot_2.png" class="card-img-top" alt="Category 2">
+                  <div class="card-body">
+                      <span>2500тг <del>4000тг<del></span>
+                      <p class="card-text">Баноффи Пай</p>
+                      <a class="btn_order btn btn-primary" href="ASSIGMENT2.html">Заказать</a>
+                  </div>
+              </div>
+          </div>
+          <div class="col-lg-4 col-md-6 mb-4">
+              <div class="card">
+                  <img src="https://api.taptatti.kz/storage/picture/product/784/pictures/Screenshot_1.png" class="card-img-top" alt="Category 3">
+                  <div class="card-body">
+                      <span>5000тг <del>7500тг<del></span>
+                      <p class="card-text">Малиновый бенто торт</p>
+                      <a class="btn_order btn btn-primary" href="ASSIGMENT2.html">Заказать</a>
+                  </div>
+              </div>
+          </div>
+          <div class="col-lg-4 col-md-6 mb-4">
+              <div class="card">
+                  <img src="https://api.taptatti.kz/storage/picture/product/17/pictures/2-9.jpg" class="card-img-top" alt="Category 3">
+                  <div class="card-body">
+                      <span>2500тг <del>5000тг<del></span>
+                      <p class="card-text">Трилече</p>
+                      <a class="btn_order btn btn-primary" href="ASSIGMENT2.html">Заказать</a>
+                  </div>
+              </div>
+          </div>
+          <div class="col-lg-4 col-md-6 mb-4">
+              <div class="card">
+                  <img src="https://api.taptatti.kz/storage/picture/product/741/pictures/2022-12-0801.47.13.JPG" class="card-img-top" alt="Category 3">
+                  <div class="card-body">
+                      <span>5000тг <del>7500тг<del></span>
+                      <p class="card-text">Polline</p>
+                      <a class="btn_order btn btn-primary" href="ASSIGMENT2.html">Заказать</a>
+                  </div>
+              </div>
+          </div>
+          <div class="col-lg-4 col-md-6 mb-4">
+              <div class="card">
+                  <img src="https://api.taptatti.kz/storage/picture/product/2/pictures/IMG_1612-1.JPG" class="card-img-top" alt="Category 3">
+                  <div class="card-body">
+                      <span>5500тг <del>7500тг<del></span>
+                      <p class="card-text">Whoopie Pie</p>
+                      <a class="btn_order btn btn-primary" href="ASSIGMENT2.html">Заказать</a>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
+
+  <script src="./script.js"></script>
+  <!-- Bootstrap and jQuery Scripts -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+</body>
+</html>
